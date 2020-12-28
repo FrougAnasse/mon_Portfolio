@@ -1,0 +1,242 @@
+.section-parcours{
+    width:100%;
+    height:auto;
+    padding:20px 0 50px 0;
+  
+}
+
+.section-parcours .parcours{
+    position:relative;
+    left:200px;
+    width:calc(100% - 200px);
+}
+
+.section-parcours .parcours h2{
+    text-align: center;
+    font-size:50px;
+    margin: 0 0 50px 0;
+}
+.section-parcours .parcours .flex{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.section-parcours .parcours .flex .barreChronologique{
+    width:5px;
+    height:calc(175px * 3 + 25px * 2);
+    background: #666;
+    margin:0px 30px;
+}
+
+
+
+.section-parcours .parcours .flex .barreChronologique .cercle-logo{
+    position: relative;
+    width:55px;
+    height:55px;
+    border-radius: 100%;
+    background-color: lightgray;
+    z-index: 5000;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+}
+
+.section-parcours .parcours .flex .barreChronologique .cercle-logo img{
+        width:40px;
+}
+
+.section-parcours .parcours .flex .barreChronologique .logo1{
+    left:-25px;
+    top:0;
+}
+
+.section-parcours .parcours .flex .barreChronologique .logo2{
+    left:-25px;
+    top:145px;
+}
+
+.section-parcours .parcours .flex .barreChronologique .logo3{
+    left:-25px;
+    top:290px;
+}
+
+.section-parcours .parcours .flex .grid{
+    display: grid;
+    grid-template: 175px 25px 175px 25px 175px/ 800px;
+}
+.section-parcours .parcours .flex .grid .bg-cards{
+    background-image: linear-gradient(to bottom, rgb(45, 48, 71) 10%,rgb(42, 43, 112));
+    border: 1px solid #333;
+}
+.section-parcours .parcours .flex .grid .items1{
+    grid-area: 1/1/2/1;
+}
+.section-parcours .parcours .flex .grid .items2{
+    grid-area: 3/1/4/1;
+}
+.section-parcours .parcours .flex .grid .items3{
+    grid-area: 5/1/6/1;
+}
+
+
+.section-parcours .parcours .flex .grid .bg-cards .cards{
+    position: relative;
+    top:-10px;
+    left:10px;
+    width:800px;
+    height:175px;
+    border: 2px solid #333;
+    background: #f1f1f1;
+    transition: all 0.4s ease-in-out;
+    background: white;
+}
+
+.section-parcours .parcours .flex .grid .bg-cards .cards h3{
+    font-size: 25px;
+    margin: 15px 20px;
+}
+
+.section-parcours .parcours .flex .grid .bg-cards .cards p{
+    font-size: 18px;
+    margin: 10px 20px;
+}
+
+
+.section-parcours .parcours .flex .grid .bg-cards .cards:hover{
+    top:-1px;
+    left:0px;
+}
+
+
+@media screen and (max-width:1250px){
+    .section-parcours .parcours .flex .grid{
+        grid-template: 175px 25px 175px 25px 175px/ 700px;
+    }
+    .section-parcours .parcours .flex .grid .bg-cards .cards{
+        width:700px;
+      
+    }
+} 
+
+@media screen and (max-width:1150px){
+    .section-parcours .parcours .flex .grid{
+        grid-template: 175px 25px 175px 25px 175px/ 600px;
+    }
+    .section-parcours .parcours .flex .grid .bg-cards .cards{
+        width:600px;
+    }
+} 
+
+@media screen and (max-width:1050px){
+    .section-parcours .parcours{
+        position:relative;
+        left:0px;
+        width:100%;
+    }
+    .section-parcours .parcours .flex .grid{
+        grid-template: 175px 25px 175px 25px 175px/ 700px;
+    }
+    .section-parcours .parcours .flex .grid .bg-cards .cards{
+        width:700px;
+    }
+}
+
+@media screen and (max-width:830px){
+    .section-parcours .parcours .flex .grid{
+        grid-template: 175px 25px 175px 25px 175px/ 600px;
+    }
+    .section-parcours .parcours .flex .grid .bg-cards .cards{
+        width:600px;
+    }
+}
+
+
+@media screen and (max-width:730px){
+    .section-parcours .parcours .flex .grid{
+        grid-template: 175px 25px 175px 25px 175px/ 500px;
+    }
+    .section-parcours .parcours .flex .grid .bg-cards .cards{
+        width:500px;
+    }
+}
+
+@media screen and (max-width:620px){
+    .section-parcours .parcours .flex .barreChronologique{
+        height:calc(200px * 3 + 25px * 2);
+    }
+    .section-parcours .parcours .flex .barreChronologique .logo1{
+        left:-25px;
+        top:0;
+    }
+    .section-parcours .parcours .flex .barreChronologique .logo2{
+        left:-25px;
+        top:170px;
+    }
+    .section-parcours .parcours .flex .barreChronologique .logo3{
+        left:-25px;
+        top:340px;
+    }
+    .section-parcours .parcours .flex .grid{
+        grid-template: 200px 25px 200px 25px 200px/ 400px;
+    }
+    .section-parcours .parcours .flex .grid .bg-cards .cards{
+        width:400px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:520px){
+    .section-parcours .parcours .flex .barreChronologique{
+        height:calc(300px * 3 + 25px * 2);
+    }
+    .section-parcours .parcours .flex .barreChronologique .logo1{
+        left:-25px;
+        top:0;
+    }
+    .section-parcours .parcours .flex .barreChronologique .logo2{
+        left:-25px;
+        top:270px;
+    }
+    .section-parcours .parcours .flex .barreChronologique .logo3{
+        left:-25px;
+        top:540px;
+    }
+    .section-parcours .parcours .flex .grid{
+        grid-template: 300px 25px 300px 25px 300px/ 300px;
+    }
+    .section-parcours .parcours .flex .grid .bg-cards .cards{
+        width:300px;
+        height: 300px;
+    }
+}
+
+
+@media screen and (max-width:420px){
+    .section-parcours .parcours .flex .barreChronologique{
+        height:calc(500px * 3 + 25px * 2);
+    }
+    .section-parcours .parcours .flex .barreChronologique .logo1{
+        left:-25px;
+        top:0;
+    }
+    .section-parcours .parcours .flex .barreChronologique .logo2{
+        left:-25px;
+        top:470px;
+    }
+    .section-parcours .parcours .flex .barreChronologique .logo3{
+        left:-25px;
+        top:940px;
+    }
+    .section-parcours .parcours .flex .grid{
+        grid-template: 500px 25px 500px 25px 500px/ 200px;
+    }
+    .section-parcours .parcours .flex .grid .bg-cards .cards{
+        width:200px;
+        height: 500px;
+    }
+}

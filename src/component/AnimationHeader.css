@@ -1,0 +1,8 @@
+canvas{
+    position: relative;
+    left:20%;
+    width:80%;
+    height:100vh;
+    background: rgb(40, 180, 22);
+    margin-bottom: 0;
+}

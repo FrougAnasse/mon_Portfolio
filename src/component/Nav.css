@@ -1,0 +1,151 @@
+
+
+nav{
+    width:200px;
+    height:100vh;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color:#f1f1f1;
+    background-image: linear-gradient(to bottom, rgb(45, 48, 71) 10%,rgb(42, 43, 112));
+    z-index:5000;
+}
+
+
+nav .fab{
+    font-size: 70px;
+    margin-bottom: 10px;
+    color:#f1f1f1;
+}
+
+.items{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .items .photo-identity{
+    height:120px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+nav ul{
+    height:50%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+nav ul li{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+nav ul li a, nav a{
+    text-decoration: none;
+    color:#f1f1f1;
+    display: block;
+}
+
+nav ul li a::after{
+    content:'';
+    display:block;
+    width:0;
+    margin:auto;
+    height:2px;
+    transition: all 0.2s ease-in-out;
+    background: #f1f1f1;
+}
+
+nav ul li  a:hover::after{
+    width:100%;
+}
+
+.display{
+    display:flex!important;
+}
+
+.burger{
+    position:fixed;
+    margin-top: 15px;
+    width:70px;
+    height:70px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:3px solid black;
+    border-radius: 40px;
+    background: #111;
+    transition: 1s all ease-in-out;
+    z-index: 50001;
+    display: none;
+   
+}
+
+.burger .ligne1{
+    position: relative;
+    background-color: white;
+    margin-bottom: 10px;
+    width: 60%;
+    height:5px;
+    top:0;
+    transition:transform 2.5s ,top 0.3s,width 0.3s;
+}
+.burger .ligne2{
+    position: relative;
+    background-color: white;
+    margin-bottom: 10px;
+    width: 60%;
+    height:5px;
+    transition: 1s all ease-in-out;
+}
+.burger .ligne3{
+    position: relative;
+    background-color: white;
+    width: 60%;
+    height:5px;
+    transition:transform 2.5s ,top 0.3s;
+}
+
+.burger.active .ligne1{
+    top:15px;
+    transform: rotate(45deg);
+    width: 80%;
+}
+
+ .burger.active .ligne2{
+    opacity: 0;
+} 
+.burger.active .ligne3{
+    top:-15px;
+    transform: rotate(-45deg);
+    width: 80%;
+}
+
+
+@media screen and (max-width:1050px){
+    .burger{
+        display: flex;
+    }
+
+    nav .photo-identity{
+        display: none;
+    }
+  
+    .display{
+        display:none!important;
+    }
+}
+

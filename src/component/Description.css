@@ -1,0 +1,103 @@
+.section-description{
+    width:100%;
+    height:auto;
+    min-height:60vh;
+    border-top:3px dotted #333;
+    border-bottom:3px dotted #333; 
+    overflow: hidden;
+}
+
+.section-description .descriptionBg{
+    position: relative;
+    width: 110%;
+    height:100%;
+    min-height:60vh;
+    left:0px;
+    clip-path: polygon(30% 0%, 100% 0%, 70% 100%, 0% 100%);
+   background-image: linear-gradient(to bottom, rgb(26, 29, 51),rgb(42, 43, 112));
+   border-radius: 00%;;
+   color:#f1f1f1;
+   padding:10px 0 30px 0;
+
+   display:flex;
+   flex-direction: column;
+}
+
+.section-description  h2{
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.section-description .descriptionBg .flex{
+    position: relative;
+    left:25%;
+    width: 50%;
+    height:80%;
+    justify-self: center;
+}
+
+.section-description .descriptionBg .flex .text{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-description .descriptionBg .flex .text p{
+    margin-bottom: 2rem;
+    font-size:29px;
+}
+
+@media screen and (max-width:1300px){
+    .section-description .descriptionBg{
+       border-radius: 0%;
+       color:#f1f1f1;
+    }
+    .section-description .descriptionBg .flex .text p{
+        font-size:25px;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .section-description{
+        height:auto;
+    }
+    .section-description .descriptionBg{
+        padding:25px 0 50px 0;
+        left:0px;
+        clip-path:  none;
+        border-radius: 0%;
+        width:100%;
+    }
+    .section-description .descriptionBg .flex{
+        left:0%;
+        margin-left: 10%;
+        margin-right: 10%;
+        width:80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .section-description .descriptionBg .flex .text{
+        width:100%;
+        height:50%;
+    }
+    .section-description .descriptionBg .flex .text p{
+        font-size:25px;
+    }
+}
+@media screen and (max-width:380px){
+    .section-description  h2{
+        position: relative;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 43px;
+        margin-bottom: 25px;
+    }
+    
+}
